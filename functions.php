@@ -27,3 +27,9 @@ function enqueue_styles_child_theme()
 	);
 }
 add_action('wp_enqueue_scripts', 'enqueue_styles_child_theme');
+
+
+function register_header_menu(){
+	register_nav_menu('header-menu',__('Header Menu Child'));
+}
+add_action('init','register_header_menu');
