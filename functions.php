@@ -1,4 +1,6 @@
 <?php
+require_once get_template_directory() . './class-wp-bootstrap-navwalker.php';
+
 function enqueue_styles_child_theme()
 {
 
